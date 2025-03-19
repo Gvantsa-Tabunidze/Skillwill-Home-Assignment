@@ -75,7 +75,6 @@ answers.addEventListener('click', function (e) {
       const wrongAnswer = document.createElement('p')
         wrongAnswer.innerText = 'Wrong answer, sorry :(';
         wrongAnswer.style.color = 'red'
-        score = `Total score is ${0}`
         answers.appendChild(wrongAnswer)
         
     }
