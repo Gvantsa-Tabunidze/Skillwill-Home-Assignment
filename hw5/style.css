@@ -1,0 +1,29 @@
+
+.pop-UP{
+  width: 500px;
+  height: 500px;
+  background-color: blanchedalmond;
+  border:1px solid;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.divCard{
+  margin-top: 36px;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quizDiv{
+  border: 1px solid grey;
+  width: fit-content;
+  height: fit-content;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 56px;
+}
