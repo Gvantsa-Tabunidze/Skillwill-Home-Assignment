@@ -1,0 +1,37 @@
+.pop-up{
+  width: 400px;
+  height: 200px;
+  background-color: aliceblue;
+  display: block;
+  text-align: center;
+  border-radius: 12px;
+  padding: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+ 
+}
+
+.pop-up-open{
+  display: block;
+}
+
+p{
+  font-size: larger;
+}
+
+.closeBtn{
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  height: 32px;
+  width:32px;
+  cursor: pointer;
+}
+
+
+#sumbit-color{
+  margin: 50px 0 50px 0;
+}
