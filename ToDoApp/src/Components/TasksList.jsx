@@ -2,6 +2,8 @@ import { Component } from "react";
 import TaskItem from "./TaskItem";
 import Tasks_done from "./Tasks_done";
 
+
+
 class TasksList extends Component {
   state = {
     inputValue:'',
@@ -63,21 +65,29 @@ const updatedTasks = [...this.state.tasks, tasksToMoveBack].map((task,index)=>({
 this.setState({
   tasks:updatedTasks,
   tasks_done:tasksToStay
-
 })
 }
 
 
-
   render(){
+    let activeTasksMessage = null;
+    if(this.state.tasks.length ===0 && this.state.tasks_done.length ===0){
+      activeTasksMessage = <p className="emptyState">No active tasks here</p>
+    } else if (this.state.tasks.length ===0  && this.state.tasks_done.length > 0) {
+      activeTasksMessage = <p className="emptyState">All tasks are successfully completed</p>;
+    }
+ 
+   
     return(
       <>
       <div className="listsContainer">
-
       <form onSubmit ={this.addTask} className="formStyle">
         <input type="text" onChange={this.inputChange} value={this.state.inputValue} />
         <button type = "submit">Add</button>
       </form>
+
+
+      {activeTasksMessage}
 
 {/*Thelist of tasks to be rendered*/}
       <div className="tasksDiv">
@@ -93,7 +103,6 @@ this.setState({
         ))}
         </div>
       </div>
-
       </div>
       </>
     )

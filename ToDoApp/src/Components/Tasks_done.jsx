@@ -1,4 +1,5 @@
 import React from 'react'
+import './TasksStyle.css'
 
 const Tasks_done = ({name,id,action}) => {
   return (

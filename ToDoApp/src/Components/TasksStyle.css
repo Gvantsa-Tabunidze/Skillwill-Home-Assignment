@@ -25,7 +25,12 @@
     justify-content: space-between;
     width: 100%;
   }
- 
+}
+
+.emptyState{
+  color: grey;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 24px;
 }
 
 
