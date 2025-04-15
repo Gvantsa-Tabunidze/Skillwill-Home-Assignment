@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import './App.css'
-import MainBook from './Components/MainBook'
+import MainBook from './Components/MainBook.jsx'
 import BookCover from './assets/a walk to remember.png'
+
+
 
 function App() {
 
@@ -19,7 +21,7 @@ const openDiv = ()=>{
 
   return (
     <>
-        <MainBook image={mainBook.img} name={mainBook.name} description={mainBook.descr} openPop_Up={openDiv} />   
+        <MainBook image={mainBook.img} name={mainBook.name} description={mainBook.descr} openPop_Up={openDiv} character={mainBook.character_names}/>   
     </>
   )
 }

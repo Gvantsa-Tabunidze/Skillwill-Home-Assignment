@@ -69,6 +69,12 @@ this.setState({
 }
 
 
+editTask = (taskId, newName)=>{
+const updatedTasks = this.state.tasks.map(task => task.id === taskId ? {...task, task_name: newName} : task);
+this.setState({tasks: updatedTasks})
+}
+
+
   render(){
     let activeTasksMessage = null;
     if(this.state.tasks.length ===0 && this.state.tasks_done.length ===0){
@@ -93,7 +99,7 @@ this.setState({
       <div className="tasksDiv">
         <div id ="task-divs" className="tasks-to-do">
         {this.state.tasks.map((el)=>(
-         <TaskItem key={el.id} id={el.id} name={el.task_name} action={this.doTask}/>
+         <TaskItem key={el.id} id={el.id} name={el.task_name} action={this.doTask} editAction={this.editTask}/>
         ))}
         </div>
 

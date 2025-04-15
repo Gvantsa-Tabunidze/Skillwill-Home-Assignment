@@ -24,6 +24,11 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    gap: 12px;
+  }
+  input {
+    height: 40px;
+    padding: 8px;
   }
 }
 
@@ -50,10 +55,11 @@
 }
 
 .listsContainer{
-  width: 800px;
+  width: 1000px;
   border: 1px solid black;
   padding: 24px;
   border-radius: 24px;
+
 }
 
 .formStyle{
@@ -66,5 +72,10 @@
   height: 40px;
   width: 100%;
   padding: 8px;
+}
+
+.action-buttons{
+  display: flex;
+  gap: 12px;
 }
 

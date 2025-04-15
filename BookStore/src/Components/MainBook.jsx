@@ -1,6 +1,8 @@
 import React from 'react'
 
 
+
+
 const MainBook = ({name, image, description, openPop_Up}) => {
   return (
     <div>
@@ -13,3 +15,5 @@ const MainBook = ({name, image, description, openPop_Up}) => {
 }
 
 export default MainBook
+
+
